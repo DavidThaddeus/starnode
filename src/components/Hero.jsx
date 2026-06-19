@@ -44,7 +44,7 @@ const Hero = () => {
       </div>
 
       <div className="container-custom relative z-10">
-        <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 items-center min-h-screen py-24 sm:py-20">
+        <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 items-center min-h-screen pt-32 pb-20 sm:py-20">
           {/* Left Content */}
           <motion.div
             className="text-center lg:text-left space-y-8"
