@@ -148,7 +148,7 @@ const GameMechanics = () => {
               endless possibilities of character customization and tactical combat.
             </p>
             <motion.button
-              className="btn-primary text-lg"
+              className="btn-primary text-base sm:text-lg"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >

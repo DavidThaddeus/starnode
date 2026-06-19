@@ -207,7 +207,7 @@ const Features = () => {
           transition={{ duration: 0.8, delay: 1.0 }}
         >
           <motion.button
-            className="btn-primary text-lg"
+            className="btn-primary text-base sm:text-lg"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >

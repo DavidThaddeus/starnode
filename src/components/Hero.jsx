@@ -112,7 +112,7 @@ const Hero = () => {
             >
               <Link
                 to="/getting-started"
-                className="btn-primary text-lg w-full sm:w-auto"
+                className="btn-primary text-base sm:text-lg w-full sm:w-auto"
               >
                 Getting Started
               </Link>

@@ -208,7 +208,7 @@ const Community = () => {
 
                 {/* Content */}
                 <div className="text-center">
-                  <h3 className="text-2xl font-space font-bold text-white mb-4 group-hover:text-gradient transition-all duration-300">
+                  <h3 className="text-xl sm:text-2xl font-space font-bold text-white mb-4 group-hover:text-gradient transition-all duration-300">
                     {social.name}
                   </h3>
 

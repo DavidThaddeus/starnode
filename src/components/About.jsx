@@ -83,7 +83,7 @@ const About = () => {
           </motion.h2>
 
           <motion.p
-            className="text-gray-400 text-lg max-w-2xl mx-auto"
+            className="text-gray-400 text-base sm:text-lg max-w-2xl mx-auto"
             initial={{ opacity: 0, y: 20 }}
             animate={inView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.35 }}
@@ -162,7 +162,7 @@ const About = () => {
               <Link
                 to="/getting-started"
                 onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-                className="btn-primary text-lg w-full sm:w-auto"
+                className="btn-primary text-base sm:text-lg w-full sm:w-auto"
               >
                 Get Started Now
               </Link>
@@ -170,7 +170,7 @@ const About = () => {
                 href={LINKS.whitepaper}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn-secondary text-lg w-full sm:w-auto"
+                className="btn-secondary text-base sm:text-lg w-full sm:w-auto"
               >
                 View Whitepaper
               </a>

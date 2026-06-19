@@ -161,7 +161,7 @@ const GettingStarted = () => {
 
                   {/* Number + Icon column */}
                   <div className="flex sm:flex-col items-center sm:items-center gap-4 sm:gap-3 flex-shrink-0 sm:w-20">
-                    <span className="text-5xl font-space font-bold text-neon-blue/15 leading-none select-none">
+                    <span className="text-4xl sm:text-5xl font-space font-bold text-neon-blue/15 leading-none select-none">
                       {step.number}
                     </span>
                     <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-neon-blue/20 to-blue-glow/10 border border-neon-blue/25 flex items-center justify-center group-hover:border-neon-blue/50 group-hover:bg-neon-blue/20 transition-all duration-300">
@@ -317,13 +317,13 @@ const GettingStarted = () => {
               players already building their decks on-chain.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <MintButton className="btn-primary text-lg w-full sm:w-auto">
+              <MintButton className="btn-primary text-base sm:text-lg w-full sm:w-auto">
                 Mint Your First Character
               </MintButton>
               <Link
                 to="/"
                 onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-                className="btn-secondary text-lg w-full sm:w-auto"
+                className="btn-secondary text-base sm:text-lg w-full sm:w-auto"
               >
                 Back to Home
               </Link>

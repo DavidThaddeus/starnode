@@ -69,26 +69,26 @@ const Footer = () => {
                   decoding="async"
                   className="h-10 w-auto"
                 />
-                <span className="text-2xl font-space font-bold text-gradient">
+                <span className="text-xl sm:text-2xl font-space font-bold text-gradient">
                   StarNode
                 </span>
               </motion.div>
             </Link>
 
-            <p className="text-gray-300 leading-relaxed mb-6">
+            <p className="text-sm sm:text-base text-gray-300 leading-relaxed mb-6">
               The Premier sci-fi TCG on Solana. Connect, compete, and conquer the stars
               in the ultimate blockchain gaming experience.
             </p>
 
-            <div className="flex items-center space-x-2 text-gray-400 mb-4">
-              <Mail size={16} />
-              <a href={`mailto:${LINKS.email}`} className="hover:text-neon-blue transition-colors duration-300">
+            <div className="flex items-center space-x-2 text-sm sm:text-base text-gray-400 mb-4">
+              <Mail size={16} className="flex-shrink-0" />
+              <a href={`mailto:${LINKS.email}`} className="hover:text-neon-blue transition-colors duration-300 break-all">
                 {LINKS.email}
               </a>
             </div>
 
-            <div className="flex items-center space-x-2 text-gray-400 mb-6">
-              <MapPin size={16} />
+            <div className="flex items-center space-x-2 text-sm sm:text-base text-gray-400 mb-6">
+              <MapPin size={16} className="flex-shrink-0" />
               <span>Built on Solana</span>
             </div>
 
@@ -114,10 +114,10 @@ const Footer = () => {
           {/* Links Sections */}
           {Object.entries(footerLinks).map(([category, links]) => (
             <div key={category}>
-              <h3 className="text-xl font-space font-bold text-white mb-6">
+              <h3 className="text-lg sm:text-xl font-space font-bold text-white mb-4 sm:mb-6">
                 {category}
               </h3>
-              <ul className="space-y-3">
+              <ul className="space-y-2.5 sm:space-y-3 text-sm sm:text-base">
                 {links.map((link) => (
                   <li key={link.name}>
                     {link.internal ? (
@@ -156,10 +156,10 @@ const Footer = () => {
         </div>
 
         {/* Bottom Section */}
-        <div className="border-t border-neon-blue/20 pt-8">
-          <div className="flex flex-col lg:flex-row justify-between items-center space-y-4 lg:space-y-0">
+        <div className="border-t border-neon-blue/20 pt-6 sm:pt-8">
+          <div className="flex flex-col sm:flex-row justify-between items-center gap-3 sm:gap-0">
             {/* Copyright */}
-            <div className="text-gray-400 text-center lg:text-left">
+            <div className="text-xs sm:text-sm text-gray-400 text-center sm:text-left">
               <p>&copy; 2024 StarNode Studios. All rights reserved.</p>
             </div>
 
@@ -168,7 +168,7 @@ const Footer = () => {
               <Link
                 to="/privacy"
                 onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-                className="text-gray-400 hover:text-neon-blue transition-colors duration-300"
+                className="text-xs sm:text-sm text-gray-400 hover:text-neon-blue transition-colors duration-300"
               >
                 Privacy Policy
               </Link>
